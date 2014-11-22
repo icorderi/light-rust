@@ -3,6 +3,8 @@
  "compiled.map",
  "sources":
  ["src/lt/plugins/rust.cljs"],
- "lineCount":2,
- "mappings":"",
- "names":[]}
+ "lineCount":22,
+ "mappings":
+ ";AAAA;;;;;;;;;;;;;;;;;;AAYA,iCAAA,4FAAA,qDAAA,iFAAA,nQAACA;AAGD,AAAKC,uBAAK,2BAAA,3BAACC",
+ "names":
+ ["lt.object/object*", "lt.plugins.rust/rust", "lt.object/create"]}
