@@ -1,0 +1,29 @@
+{:+
+ {:app [(:lt.objs.plugins/load-js ["codemirror/rust.js", "rust_compiled.js"])]
+
+  :sidebar.docs.search [:lt.plugins.rust/rust-doc-search]
+
+  :editor.rust [:lt.plugins.rust/rust-doc
+
+                :lt.plugins.rust/rust-reformat
+                :lt.plugins.rust/rust-syntax
+                :lt.plugins.rust/rust-lint
+                :lt.plugins.rust/editor-reformat-result
+                :lt.plugins.rust/editor-syntax-result
+                :lt.plugins.rust/editor-lint-result
+
+                :lt.plugins.rust/on-eval-one
+                :lt.plugins.rust/rust-success
+                :lt.plugins.rust/rust-result
+                :lt.plugins.rust/rust-exception
+                :lt.plugins.rust/on-eval-type
+
+                [:lt.object/add-tag :docable]
+                [:lt.object/add-tag :watchable]]
+
+  :files [(:lt.objs.files/file-types [{:name "Rust" :exts [:rs] :mime "text/x-rustsrc" :tags [:editor.rust]} ])]
+
+  :rust.lang [:lt.plugins.rust/connect
+              :lt.plugins.rust/rust-send-reformat
+              :lt.plugins.rust/rust-send-lint
+              :lt.plugins.rust/rust-send-syntax]}}
